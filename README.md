@@ -90,14 +90,6 @@ MySQL Database: Or MariaDB
 
 WoW Private Server Database: You'll need access to your WoW private server's auth and characters databases.
 
-Installation Steps
-Clone the Repository:
-
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-(Replace your-username/your-repo-name with your actual GitHub repository path).
-
 Web Server Configuration:
 
 Place all the website files (including index.php, dashboard.php, 404.php, css/, etc.) into your web server's document root (e.g., htdocs for Apache, wwwroot for IIS).
@@ -222,4 +214,4 @@ Feel free to fork this repository, suggest improvements, or submit pull requests
 📄 License
 This project is open-source and available under the MIT License.
 
-Developed with ❤️ by Baftes and Gemini
+Developed with ❤️ by Baftes
