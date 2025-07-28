@@ -110,41 +110,6 @@ WoW Database Access: Ensure your web server can connect to your WoW server's aut
 
 Configuration File (config.php):
 
-You'll need to edit the config.php file 
-
-Example config.php structure:
-
-<?php
-// Database configuration for Website Users
-define('DB_WEB_HOST', 'localhost');
-define('DB_WEB_PORT', '3306');
-define('DB_WEB_NAME', 'website_db'); // Your website database name
-define('DB_WEB_USER', 'your_web_db_user');
-define('DB_WEB_PASS', 'your_web_db_password');
-
-// Database configuration for WoW Auth (accounts)
-define('DB_AUTH_HOST', 'localhost');
-define('DB_AUTH_PORT', '3306');
-define('DB_AUTH_NAME', 'auth'); // Your WoW auth database name
-define('DB_AUTH_USER', 'your_wow_db_user');
-define('DB_AUTH_PASS', 'your_wow_db_password');
-
-// Database configuration for WoW Characters
-define('DB_CHAR_HOST', 'localhost');
-define('DB_CHAR_PORT', '3306');
-define('DB_CHAR_NAME', 'characters'); // Your WoW characters database name
-define('DB_CHAR_USER', 'your_wow_db_user');
-define('DB_CHAR_PASS', 'your_wow_db_password');
-
-// Site Name
-$wow_name = "My Awesome WoW Server";
-
-// Secret key for session management (CHANGE THIS!)
-define('SECRET_KEY', 'your_very_strong_secret_key_here_for_sessions');
-
-// Other configurations as needed
-?>
-
 🛠️ How to Use
 Navigation
 Use the navigation links in the header to move between Home, News, How to Play, and Community.
