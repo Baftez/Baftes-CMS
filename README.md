@@ -110,18 +110,7 @@ Create Website Database: Create a new MySQL database for the website (e.g., webs
 
 Import SQL Schema:
 
-You'll need a web_users table for website user accounts. A basic schema might look like this (you'll need to create this manually or from an existing project):
-
-CREATE TABLE `web_users` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `username` VARCHAR(255) NOT NULL UNIQUE,
-    `email` VARCHAR(255) NOT NULL UNIQUE,
-    `password_hash` VARCHAR(255) NOT NULL,
-    `role` ENUM('user', 'admin') DEFAULT 'user',
-    `registration_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
-    `last_login_ip` VARCHAR(45),
-    `last_login_date` DATETIME
-);
+You'll need to upload the web_users table for website user accounts.
 
 You will need to manually create this table or use an existing one.
 
@@ -129,7 +118,7 @@ WoW Database Access: Ensure your web server can connect to your WoW server's aut
 
 Configuration File (config.php):
 
-You'll need a config.php file (not included in this repository for security reasons) in your project's root directory. This file should contain your database connection details and other global settings.
+You'll need to edit the config.php file 
 
 Example config.php structure:
 
@@ -163,12 +152,6 @@ define('SECRET_KEY', 'your_very_strong_secret_key_here_for_sessions');
 
 // Other configurations as needed
 ?>
-
-Security: Never commit your config.php file directly to a public GitHub repository. Add it to your .gitignore.
-
-Favicon:
-
-Place your favicon.ico file in the root directory of your website.
 
 🛠️ How to Use
 Navigation
