@@ -104,8 +104,6 @@ Import SQL Schema:
 
 You'll need to upload the web_users table for website user accounts.
 
-You will need to manually create this table or use an existing one.
-
 WoW Database Access: Ensure your web server can connect to your WoW server's auth and characters databases.
 
 Configuration File (config.php):
