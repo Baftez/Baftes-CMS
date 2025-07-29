@@ -17,7 +17,9 @@ Edit the config.php file with your specific database credentials.
 This project is open-source and ready for you to customize!
 
 Admin account details:
+
 Username: Admin
+
 Password: password
 
 🔗 Discord channel for constant updates: https://discord.gg/9BMeFaqS
