@@ -1,180 +1,26 @@
-WoW Private Server Community Website
-This repository contains the source code for a custom World of Warcraft private server community website. Designed with a classic WoW aesthetic, this platform provides essential features for players to manage their accounts and characters, alongside powerful administration tools for server operators to manage users and news content.
+Hey everyone! We're excited to share the new community website for your World of Warcraft private server. Designed with a classic WoW feel, this platform is packed with features to enhance your experience!
 
-The website is built using PHP for server-side logic, MySQL for database management, and a combination of Tailwind CSS and custom CSS for a responsive and themed user interface.
+What's inside?
 
-✨ Key Features & Enhancements
-We've implemented a range of features to provide a robust and engaging experience:
+Player Dashboard: Manage your account details, change your password, and view all your in-game characters (level, gold, race, class, gender) directly on the site!
+Powerful Admin Panel: For server operators, we've built robust tools to manage WoW game accounts (including GM levels), website users (roles, passwords), and a full-featured News Editor with a rich text editor and even an emoji picker!
+Clean & Responsive Design: Enjoy a seamless, WoW-themed experience on any device, thanks to Tailwind CSS and custom styling.
+Clean URLs: Our links are now super clean (e.g., /news instead of news.php) for a modern feel.
+Ready to set it up for your server?
 
-User Dashboard:
+It's built with PHP and uses MySQL databases. To get started, you'll need to:
 
-Account Details: Users can view their personal information, including username, email, and last login details.
+Upload the website files to your web server.
+Import the necessary MySQL data for website users (and ensure connection to your WoW auth and characters databases).
+Edit the config.php file with your specific database credentials.
+(If using Apache) Ensure your .htaccess file is set up for clean URLs and custom 404s.
+This project is open-source and ready for you to customize!
 
-Change Password: Secure form for users to update their account password.
+Admin account details:
+Username: Admin
+Password: password
 
-My Characters: Displays a list of World of Warcraft characters associated with the user's account, showing details like level, race, class, gender, and in-game gold.
+🔗 Check out the code and get started: https://github.com/Baftez/Baftes-CMS
+🔗 Discord channel for constant updates: https://discord.gg/9BMeFaqS
 
-Admin Panel (Role-Based Access):
-
-Manage WoW Accounts & Characters: Administrators can view and manage all WoW game accounts and their associated characters. Features include:
-
-Live search functionality to quickly find accounts by username.
-
-Ability to update WoW account GM (Game Master) levels.
-
-Option to update character levels and gold.
-
-Confirmation modals for deleting WoW accounts (which also deletes associated characters) and individual characters.
-
-Manage Website Users: Administrators can manage website user accounts. Features include:
-
-Live search functionality to find users by username or email.
-
-Ability to update user roles (e.g., user to admin).
-
-Option to reset website user passwords.
-
-Confirmation modals for deleting website users.
-
-News Editor (Admin Only):
-
-A dedicated section within the admin panel for creating, editing, and deleting news posts for the community.
-
-Rich Text Editor: A custom-built WYSIWYG (What You See Is What You Get) editor for news content, featuring:
-
-Basic formatting options (Bold, Italic, Underline).
-
-Ability to insert links and images.
-
-Emoji Picker: A custom modal emoji picker to easily insert emojis into news content.
-
-Support for blockquotes, unordered lists, ordered lists, and heading levels (H1, H2, Paragraph).
-
-"Clear Formatting" option.
-
-The editor preserves HTML formatting upon submission and retrieval.
-
-User Experience & Design:
-
-WoW-Themed UI: Custom CSS (style.css) provides a consistent World of Warcraft-inspired visual design across all pages.
-
-Responsive Design: Utilizes Tailwind CSS for a mobile-first, responsive layout that adapts to various screen sizes.
-
-Flash Messages: Dynamic success/error messages displayed after form submissions, with automatic fading for success messages.
-
-Custom Modals: User-friendly confirmation modals for sensitive actions (e.g., deletion), replacing intrusive browser alert() and confirm() prompts.
-
-Consistent Navigation: All pages, including the 404 error page, now feature the site's main navigation bar with dynamic login status display.
-
-Clean URLs (SEO Friendly):
-
-Implemented server-side URL rewriting (via .htaccess for Apache) to remove .php extensions from URLs (e.g., yourdomain.com/dashboard instead of yourdomain.com/dashboard.php).
-
-Includes 301 redirects to ensure old .php URLs are permanently redirected to their clean counterparts, preserving SEO value.
-
-Custom 404 Error Page:
-
-A themed 404 "Page Not Found" page that integrates seamlessly with the website's design, including the main navigation bar and background.
-
-Provides a friendly message and a clear call-to-action to return to the homepage.
-
-🚀 Getting Started
-Follow these steps to set up the WoW Private Server Community Website on your local machine or server.
-
-Prerequisites
-Web Server: Apache (recommended for .htaccess support)
-
-PHP: Version 7.4 or higher (with pdo_mysql extension enabled)
-
-MySQL Database: Or MariaDB
-
-WoW Private Server Database: You'll need access to your WoW private server's auth and characters databases.
-
-Web Server Configuration:
-
-Place all the website files (including index.php, dashboard.php, 404.php, css/, etc.) into your web server's document root (e.g., htdocs for Apache, wwwroot for IIS).
-
-Apache Users: Ensure your Apache configuration allows .htaccess overrides (AllowOverride All for your document root directory). The provided .htaccess file handles clean URLs and custom 404s.
-
-Database Setup:
-
-Create Website Database: Create a new MySQL database for the website (e.g., website_db).
-
-Import SQL Schema:
-
-You'll need to upload the web_users table for website user accounts.
-
-WoW Database Access: Ensure your web server can connect to your WoW server's auth and characters databases.
-
-Configuration File (config.php):
-
-🛠️ How to Use
-Navigation
-Use the navigation links in the header to move between Home, News, How to Play, and Community.
-
-The "Account" dropdown will show "Login" and "Register" if not logged in, or your username and "Dashboard" / "Logout" if logged in.
-
-Dashboard
-Log in to access your personal dashboard.
-
-Update your password in the "Change Your Password" section.
-
-View your WoW characters under "My Characters".
-
-Admin Panel (Requires Admin Role)
-Log in as an administrator to access the "Admin Panel" and "News Editor" links in the sidebar.
-
-Manage WoW Accounts & Characters:
-
-Use the search bar to filter accounts.
-
-Expand account details to see characters.
-
-Use "Update GM" to change a WoW account's GM level.
-
-Edit character level and gold directly in the table and click "Update".
-
-Use "Delete Account" or "Delete Character" buttons to remove entries (requires confirmation).
-
-Manage Website Users:
-
-Use the search bar to filter website users.
-
-Update username, email, or role directly in the table and click "Update".
-
-"Reset Pass" will set a new random password for the user (you'll need to communicate this securely).
-
-"Delete" will remove the website user (requires confirmation).
-
-News Editor (Requires Admin Role)
-Add New News Post:
-
-Enter a title.
-
-Use the rich text editor to compose your news content.
-
-Click "Emoji" to open the emoji picker and insert emojis at your cursor position.
-
-Click "Add News Post" to publish.
-
-Edit Existing News Post:
-
-Find the news post in the "Existing News Posts" table.
-
-Click "Edit" to load the content into the editor.
-
-Make your changes and click "Update News Post".
-
-Click "Cancel Edit" to discard changes and return to the add form.
-
-Delete News Post:
-
-Click "Delete" next to a news post (requires confirmation).
-
-🤝 Contributing
-Feel free to fork this repository, suggest improvements, or submit pull requests.
-
-📄 License
-This project is open-source and available under the MIT License.
-
-Developed with ❤️ by Baftes
+Let us know what you think! Happy adventuring!
