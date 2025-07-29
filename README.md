@@ -20,7 +20,6 @@ Admin account details:
 Username: Admin
 Password: password
 
-🔗 Check out the code and get started: https://github.com/Baftez/Baftes-CMS
 🔗 Discord channel for constant updates: https://discord.gg/9BMeFaqS
 
 Let us know what you think! Happy adventuring!
