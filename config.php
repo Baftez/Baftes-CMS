@@ -2,14 +2,14 @@
 define('ROOT_PATH', dirname(__DIR__));
 
 /* World Of Warcraft */
-$site_url = "wowp.baftes.com"; //  Url to your Wow web page
-$wow_name = "Baftes Gaming"; // Name of your wow server
+$site_url = ""; //  Url to your Wow web page
+$wow_name = ""; // Name of your wow server
 $key_words = "wow, server"; 
 $discord = "https://discord.gg/9mKuPhwTFf"; // Your discord channel
-$IP = "pal.baftes.com"; // Realm ip or url
+$IP = ""; // Realm ip or url
 $description = "Best world of warcraft server in the world"; 
 $port_wow = "8085"; // Enter your worlds port here typically 8085 this lets to page know if your server is online or not
-$realm_IP = "pal.baftes.com"; // Enter your Realm IP / url here
+$realm_IP = ""; // Enter your Realm IP / url here
 
 // This is for the "How to play" page, leave the ones blank you dont want showing on the page
 $download_windows = "Enter download link here"; // Enter the download link for the wow client here
