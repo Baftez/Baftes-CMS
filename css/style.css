@@ -1,0 +1,460 @@
+/* Custom styles for a WoW-like feel designed by Baftes */
+body {
+    font-family: 'Georgia', serif; /* A classic serif font for fantasy feel */
+    background-color: #1a1a1a; /* Dark background */
+    background-image: url('bg.jpg'); /* Loading background image from the same directory as style.css */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #d4c1a7; /* Light brown/gold text color */
+    text-shadow: 1px 1px 2px #000; /* Text shadow for depth */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-bg {
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
+    border-bottom: 2px solid #5a4b3d; /* Dark brown border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.section-bg {
+    background-color: rgba(34, 34, 34, 0.9); /* Slightly lighter semi-transparent background for sections */
+    border: 2px solid #5a4b3d; /* Dark brown border */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Updated .btn-wow styles to match the 404 page */
+.btn-wow {
+    display: inline-block;
+    background: linear-gradient(to bottom, #7a634a, #5a4b3d); /* WoW button gradient */
+    color: #ffe066; /* Gold text */
+    padding: 12px 28px; /* Adjusted padding */
+    border-radius: 8px; /* Adjusted border-radius */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjusted font size */
+    border: 2px solid #a0845e; /* Lighter border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Adjusted shadow */
+    transition: all 0.2s ease;
+    text-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+}
+
+.btn-wow:hover {
+    background: linear-gradient(to bottom, #8c7155, #6a5b4d); /* Slightly lighter on hover */
+    border-color: #b0946e; /* Adjusted border color on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6); /* Adjusted shadow on hover */
+}
+
+.btn-wow:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.community-card {
+    background-color: rgba(45, 45, 45, 0.95);
+    border: 1px solid #5a4b3d;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.community-card h3 {
+    color: #ffd700; /* Gold */
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.community-card p {
+    color: #d4c1a7;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.community-card .icon {
+    margin-bottom: 15px;
+    color: #ffd700; /* Gold icon color */
+}
+
+/* Styles specific to news-page */
+.news-article {
+    background-color: rgba(45, 45, 45, 0.95);
+    border: 1px solid #5a4b3d;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.news-article h3 {
+    color: #ffd700; /* Gold */
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.news-article .meta {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.news-article p {
+    color: #d4c1a7;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.news-article a {
+    color: #4a90e2; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+    color: #6aafff;
+}
+
+/* Styles specific to features-page */
+.feature-item {
+    background-color: rgba(45, 45, 45, 0.95);
+    border: 1px solid #5a4b3d;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #ffd700; /* Gold */
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    color: #d4c1a7;
+    line-height: 1.7;
+}
+
+/* Styles specific to connect-page */
+.connect-guide ol {
+    list-style: none; /* Remove default list styling */
+    counter-reset: step-counter; /* Initialize a counter */
+    padding-left: 0;
+}
+
+.connect-guide ol li {
+    counter-increment: step-counter; /* Increment counter for each list item */
+    margin-bottom: 20px;
+    padding-left: 40px; /* Space for the custom number */
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.connect-guide ol li::before {
+    content: counter(step-counter); /* Display the counter */
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffd700; /* Gold background for numbers */
+    color: #1a1a1a; /* Dark text for numbers */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #a0a0a0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.connect-guide pre {
+    background-color: #2a2a2a;
+    border: 1px solid #5a4b3d;
+    border-left: 4px solid #ffd700; /* Gold border on left */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+/* General status styles (from index.php) */
+.status-online {
+    color: #32cd32; /* Lime green */
+    font-weight: bold;
+}
+
+.status-offline {
+    color: #ff4500; /* Orange red */
+    font-weight: bold;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    /* Initially hidden and styled for smooth transition */
+    transform-origin: top right;
+}
+
+/* Responsive adjustments for smaller screens (global) */
+@media (max-width: 768px) {
+    .flex-col-reverse-md {
+        flex-direction: column-reverse; /* Stack elements on small screens */
+    }
+    /* Responsive adjustments for connect-page specific styles */
+    .connect-guide ol li {
+        padding-left: 35px; /* Adjust padding for smaller screens */
+    }
+    .connect-guide ol li::before {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+    }
+}
+/* Styles for dashboard main content area */
+.dashboard-main {
+    display: flex; /* Use flexbox for main content area */
+    flex-direction: column; /* Stack elements vertically by default */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    padding: 0; /* Remove padding from main to control it within sections */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: rgba(34, 34, 34, 0.9); /* Slightly lighter semi-transparent background */
+    border-right: 2px solid #5a4b3d; /* Dark brown border */
+    padding: 24px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push logout to bottom */
+}
+.sidebar-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    color: #d4c1a7;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer; /* Indicate clickable */
+}
+.sidebar-nav-item:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Light gold hover */
+    color: #ffe066; /* Brighter gold text on hover */
+}
+.sidebar-nav-item.active {
+    background-color: rgba(255, 215, 0, 0.3); /* Active state gold */
+    color: #fff;
+}
+.sidebar-nav-item svg {
+    margin-right: 12px;
+    color: #FFD700; /* Gold color for icons */
+}
+.content-area {
+    flex-grow: 1; /* Main content takes remaining space */
+    padding: 24px;
+}
+.content-section {
+    display: none; /* Hide all content sections by default */
+}
+.content-section.active {
+    display: block; /* Show active content section */
+}
+
+/* Existing detail-item styles */
+.detail-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px; /* Increased padding */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Slightly stronger border */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Added transform for hover */
+    margin-bottom: 4px; /* Space between items */
+}
+.detail-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.detail-item:hover {
+    background-color: rgba(255, 255, 255, 0.08); /* Slightly more visible hover */
+    border-radius: 6px; /* Rounded corners on hover */
+    transform: translateX(5px); /* Subtle slide effect */
+}
+.detail-item svg {
+    margin-right: 16px; /* Increased margin for icons */
+    color: #FFD700; /* Gold color for icons */
+    min-width: 24px; /* Ensure icon doesn't shrink */
+}
+.character-card {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between image and text */
+    background-color: rgba(45, 45, 45, 0.95); /* Match community-card background */
+    border: 1px solid #5a4b3d; /* Match community-card border */
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+/*
+.character-icon {
+    width: 68px; // Icon width
+    height: 66px; // Icon height
+    background-image: url('/images/125805.webp'); // Corrected path to your sprite sheet
+    background-size: auto; // Ensure the sprite sheet is not scaled
+    border-radius: 8px; // Rounded corners for the icon container
+    border: 2px solid #FFD700; // Gold border for the icon
+    flex-shrink: 0; // Prevent the icon from shrinking
+}
+*/
+
+/* Dynamically generated CSS classes for background-position */
+/*
+foreach ($race_sprite_map as $raceId => $data) {
+    echo ".bg-position-x{$data['x']}-y{$data['y']} { background-position: -{$data['x']}px -{$data['y']}px; }\n";
+}
+*/
+/*
+.race-icon-default {
+    background-position: 0 0; // Default position if race not found, or a specific "unknown" icon
+    background-color: #555; // A fallback background color
+}
+*/
+
+/* Admin Panel Specific Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.admin-table th, .admin-table td {
+    border: 1px solid #5a4b3d;
+    padding: 12px;
+    text-align: left;
+    color: #d4c1a7;
+}
+.admin-table th {
+    background-color: #3a3a3a;
+    font-weight: bold;
+    color: #ffe066;
+}
+.admin-table tr:nth-child(even) {
+    background-color: rgba(45, 45, 45, 0.5);
+}
+.admin-table tr:hover {
+    background-color: rgba(55, 55, 55, 0.7);
+}
+.admin-table input[type="text"],
+.admin-table input[type="email"],
+.admin-table input[type="number"],
+.admin-table select {
+    background-color: #2a2a2a;
+    border: 1px solid #5a4b3d;
+    border-radius: 4px;
+    padding: 8px;
+    color: #d4c1a7;
+    width: 100%;
+}
+.admin-table button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.admin-table .btn-edit {
+    background-color: #4a90e2; /* Blue */
+    color: #fff;
+}
+.admin-table .btn-edit:hover {
+    background-color: #357ABD;
+}
+.admin-table .btn-delete {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+}
+.admin-table .btn-delete:hover {
+    background-color: #c0392b;
+}
+.admin-table .btn-reset-pass {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+}
+.admin-table .btn-reset-pass:hover {
+    background-color: #e67e22;
+}
+.admin-table .btn-gm {
+    background-color: #2ecc71; /* Green */
+    color: #fff;
+}
+.admin-table .btn-gm:hover {
+    background-color: #27ae60;
+}
+
+/* Admin Sub-navigation Button Styles */
+.btn-admin-sub-nav {
+    background-color: #5a4b3d; /* Darker brown for sub-nav buttons */
+    color: #d4c1a7;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: 1px solid #4a3b2d;
+}
+
+.btn-admin-sub-nav:hover {
+    background-color: #6a5b4d;
+    color: #ffe066;
+}
+
+.btn-admin-sub-nav.active {
+    background-color: #ffd700; /* Gold active state */
+    color: #ff0101; /* Dark text on gold */
+    border-color: #a0a0a0;
+}
+
+/* Admin Sub-section Display */
+.admin-sub-section {
+    display: none; /* Ensure sections are hidden by default */
+}
+
+.admin-sub-section.active {
+    display: block;
+}
+
+
+/* Styling for contenteditable div */
+.content-editable-div {
+    min-height: 250px; /* Make the edit area larger */
+    border: 1px solid #5a4b3d;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #222; /* Darker background for content */
+    color: #d4c1a7; /* Text color */
+    outline: none; /* Remove default focus outline */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    /* Updated styles for text wrapping */
+    white-space: normal; /* Ensures text wraps */
+    word-wrap: break-word; /* Standard for breaking long words */
+    word-break: break-all; /* More aggressive breaking for any text that overflows */
+}
